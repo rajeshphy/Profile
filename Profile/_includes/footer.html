@@ -1,0 +1,26 @@
+<footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      {% include social-networks-links.html %}
+      {% if page.footer-extra %}
+        <div class="footer-custom-content">
+          {% for file in page.footer-extra %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+      {% unless site.remove-ads %}
+      <p class="theme-by text-muted"><a href="https://rajeshphy.github.io">Design by Rajesh Kumar</a></p>
+      {% endunless %}
+      <p class="theme-by text-muted"> 
+      <script
+          async
+          src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
